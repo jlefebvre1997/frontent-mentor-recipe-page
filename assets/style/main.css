@@ -31,7 +31,7 @@ body {
   background-color: hsl(30, 54%, 90%);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -68,7 +68,7 @@ body {
   background-color: hsl(30, 54%, 90%);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -76,6 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "YoungSerif", sans-serif;
   line-height: 1;
   font-weight: normal;
+  margin-bottom: 1.5rem;
 }
 .title--l {
   font-size: 2.25rem;
@@ -94,6 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(332, 51%, 32%);
   font-size: 1.25rem;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .text, table, li::marker, li {
@@ -109,11 +111,15 @@ h1, h2, h3, h4, h5, h6 {
 ul, ol {
   padding: 0;
   margin-left: 20px;
+  margin-bottom: 0;
 }
 
 li {
   padding-left: 16px;
   margin-bottom: 8px;
+}
+li:last-of-type {
+  margin-bottom: 0;
 }
 li::marker {
   color: hsl(14, 45%, 36%);
@@ -147,19 +153,25 @@ main {
 
 .time {
   margin-top: 32px;
-  padding: 24px;
+  padding: 28px;
   background-color: hsl(330, 100%, 98%);
   border-radius: 12px;
 }
 .time__label {
   font-weight: bold;
 }
+.time__list {
+  margin-bottom: 0;
+}
 
 .section {
-  margin: 32px 0;
+  padding: 32px 0;
 }
 .section:not(:last-of-type) {
   border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.section:last-of-type {
+  padding-bottom: 0;
 }
 
 table {
@@ -167,7 +179,7 @@ table {
 }
 table tr {
   display: flex;
-  padding: 12.5px 32px;
+  padding: 11.5px 32px;
 }
 table tr * {
   flex: 1;
@@ -175,6 +187,9 @@ table tr * {
 }
 table tr:not(:last-of-type) {
   border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+table tr:last-of-type {
+  padding-bottom: 0;
 }
 table th {
   font-weight: normal;

@@ -4,6 +4,7 @@
   font-family: 'YoungSerif', sans-serif;
   line-height: 1;
   font-weight: normal;
+  margin-bottom: pxToRem(24);
 
   &--l {
     font-size: pxToRem(36);
@@ -23,6 +24,7 @@
     color: $dark-raspberry;
     font-size: pxToRem(20);
     font-weight: 600;
+    margin-bottom: pxToRem(16);
   }
 }
 
@@ -40,6 +42,7 @@
 ul, ol {
   padding: 0;
   margin-left: 20px;
+  margin-bottom: 0;
 }
 
 li {
@@ -47,6 +50,10 @@ li {
 
   padding-left: 16px;
   margin-bottom: 8px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   &::marker {
     @extend .text, .text--bold;
