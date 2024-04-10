@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "YoungSerif";
+  src: url("../fonts/young-serif/YoungSerif-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/outfit/static/Outfit-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/outfit/static/Outfit-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/outfit/static/Outfit-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: hsl(24, 5%, 18%);
+  padding: 0;
+  margin: 0;
+  background-color: hsl(30, 54%, 90%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "YoungSerif";
+  src: url("../fonts/young-serif/YoungSerif-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/outfit/static/Outfit-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/outfit/static/Outfit-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/outfit/static/Outfit-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: hsl(24, 5%, 18%);
+  padding: 0;
+  margin: 0;
+  background-color: hsl(30, 54%, 90%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.title {
+  font-family: "YoungSerif", sans-serif;
+  line-height: 1;
+  font-weight: normal;
+}
+.title--l {
+  font-size: 2.25rem;
+}
+@media (min-width: 376px) {
+  .title--l {
+    font-size: 2.5rem;
+  }
+}
+.title--m {
+  font-size: 1.75rem;
+  color: hsl(14, 45%, 36%);
+}
+.title--s {
+  font-family: "Outfit", sans-serif;
+  color: hsl(332, 51%, 32%);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.text, table, li::marker, li {
+  font-family: "Outfit", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: hsl(30, 10%, 34%);
+}
+.text--bold, table td, li::marker {
+  font-weight: bold;
+}
+
+ul, ol {
+  padding: 0;
+  margin-left: 20px;
+}
+
+li {
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+main {
+  margin: 123px auto;
+  max-width: 736px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 24px;
+}
+
+@media (min-width: 376px) {
+  .header {
+    padding: 40px 40px 0 40px;
+  }
+}
+.header__image {
+  width: 100%;
+}
+@media (min-width: 376px) {
+  .header__image {
+    border-radius: 12px;
+  }
+}
+
+.content {
+  padding: 40px 32px;
+}
+
+.time {
+  margin-top: 32px;
+  padding: 24px;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 12px;
+}
+.time__label {
+  font-weight: bold;
+}
+
+.section {
+  margin: 32px 0;
+}
+.section:not(:last-of-type) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+table {
+  width: 100%;
+}
+table tr {
+  display: flex;
+  padding: 12.5px 32px;
+}
+table tr * {
+  flex: 1;
+  text-align: left;
+}
+table tr:not(:last-of-type) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+table th {
+  font-weight: normal;
+}
+table td {
+  color: hsl(14, 45%, 36%);
+}
+
+/*# sourceMappingURL=main.css.map */

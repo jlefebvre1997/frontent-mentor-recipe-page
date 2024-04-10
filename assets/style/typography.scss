@@ -1,0 +1,56 @@
+@import "config";
+
+.title {
+  font-family: 'YoungSerif', sans-serif;
+  line-height: 1;
+  font-weight: normal;
+
+  &--l {
+    font-size: pxToRem(36);
+
+    @media (min-width: $breakpoint-mobile) {
+      font-size: pxToRem(40);
+    }
+  }
+
+  &--m {
+    font-size: pxToRem(28);
+    color: $nutmeg;
+  }
+
+  &--s {
+    font-family: "Outfit", sans-serif;
+    color: $dark-raspberry;
+    font-size: pxToRem(20);
+    font-weight: 600;
+  }
+}
+
+.text {
+  font-family: "Outfit", sans-serif;
+  line-height: 1.5;
+  font-size: pxToRem(16);
+  color: $wenge-brown;
+
+  &--bold {
+    font-weight: bold;
+  }
+}
+
+ul, ol {
+  padding: 0;
+  margin-left: 20px;
+}
+
+li {
+  @extend .text;
+
+  padding-left: 16px;
+  margin-bottom: 8px;
+
+  &::marker {
+    @extend .text, .text--bold;
+
+    color: $nutmeg;
+  }
+}
