@@ -133,6 +133,7 @@ main {
 }
 .header__image {
   width: 100%;
+  display: block;
 }
 @media (min-width: 376px) {
   .header__image {
@@ -141,7 +142,7 @@ main {
 }
 
 .content {
-  padding: 40px 32px;
+  padding: 40px;
 }
 
 .time {

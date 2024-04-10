@@ -15,6 +15,7 @@ main {
 
   &__image {
     width: 100%;
+    display: block;
 
     @media (min-width: $breakpoint-mobile) {
       border-radius: 12px;
@@ -23,7 +24,7 @@ main {
 }
 
 .content {
-  padding: 40px 32px;
+  padding: 40px;
 }
 
 .time {
